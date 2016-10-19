@@ -36,15 +36,25 @@ public:	Vetor(GLdouble x, GLdouble y)  {
 		_y -= _v.GetY();
 	};
 
+	void div(Vetor _v){
+		_x = (_x / _v.GetX());
+		_y = (_y / _v.GetY());
+	};
+
+	void mult(Vetor _v){
+		_x *= _v.GetX();
+		_y *= _v.GetY();
+	};
+
 	GLdouble mag() {
 		return(sqrt((_x*_x) + (_y*_y)));
 	};
 
-	void Vetor::normalize(){
-		double _n = mag();
+	void normalize(){
+		float _m = mag();
 
-		if (_n > 0){
-			div(_n);
+		if (_m > 0){
+			div(Vetor (_m,_m));
 		}
 	};
 
@@ -56,21 +66,18 @@ GLdouble margemEsquerda = -300, margemDireita = 300;
 GLdouble margemInferior = 300, margemSuperior = -300;
 GLdouble larguraJanela = 600, alturaJanela = 600;
 
-double _m;
+GLdouble _m;
 Vetor _mouse(0, 0);
 
 void mouse(int x, int y) {
 	_mouse = Vetor(x, y);
 	Vetor canto(300, 300);
 	_mouse.sub(canto);
-	_m = _mouse.mag();
-
-	//	std::cout << _m << std::endl;
-	printf("Magnitude mouse %0.1f \n", _m);
+	_mouse.normalize();
+	_mouse.mult(Vetor (50,50));
+	
 	glutPostRedisplay();
 }
-
-
 
 void PontoInical(){
 	glLineWidth(2.5);
@@ -103,7 +110,7 @@ int main(int argc, char **argv) {
 	glutCreateWindow("Gc - Normalize Vetor");
 	glutDisplayFunc(desenha);
 	glutPassiveMotionFunc(mouse);
-	glClearColor(0.0, 0.0, 0.0, 1.0);
+	glClearColor(0.8, 0.8, 0.8, 1.0);
 	glutMainLoop();
 	return(0);
 }

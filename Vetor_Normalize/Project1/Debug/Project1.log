@@ -1,12 +1,16 @@
-﻿Build started 18/10/2016 21:38:30.
+﻿Build started 19/10/2016 11:36:25.
      1>Project "D:\Documents\UNOESC\UNOESC 2016\Semestre II\grafica II\Vetor_Normalize\Vetor_Normalize\Project1\Project1.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\main.cpp
          main.cpp
-     1>d:\documents\unoesc\unoesc 2016\semestre ii\grafica ii\vetor_normalize\vetor_normalize\main.cpp(47): error C2661: 'div' : no overloaded function takes 1 arguments
-     1>d:\documents\unoesc\unoesc 2016\semestre ii\grafica ii\vetor_normalize\vetor_normalize\main.cpp(89): warning C4244: 'argument' : conversion from 'GLdouble' to 'GLsizei', possible loss of data
-     1>Done Building Project "D:\Documents\UNOESC\UNOESC 2016\Semestre II\grafica II\Vetor_Normalize\Vetor_Normalize\Project1\Project1.vcxproj" (Build target(s)) -- FAILED.
+     1>d:\documents\unoesc\unoesc 2016\semestre ii\grafica ii\vetor_normalize\vetor_normalize\main.cpp(54): warning C4244: 'initializing' : conversion from 'GLdouble' to 'float', possible loss of data
+     1>d:\documents\unoesc\unoesc 2016\semestre ii\grafica ii\vetor_normalize\vetor_normalize\main.cpp(96): warning C4244: 'argument' : conversion from 'GLdouble' to 'GLsizei', possible loss of data
+     1>d:\documents\unoesc\unoesc 2016\semestre ii\grafica ii\vetor_normalize\vetor_normalize\main.cpp(113): warning C4305: 'argument' : truncation from 'double' to 'GLclampf'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Documents\UNOESC\UNOESC 2016\Semestre II\grafica II\Vetor_Normalize\Vetor_Normalize\Debug\Project1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Documents\UNOESC\UNOESC 2016\Semestre II\grafica II\Vetor_Normalize\Vetor_Normalize\Debug\Project1.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Documents\UNOESC\UNOESC 2016\Semestre II\grafica II\Vetor_Normalize\Vetor_Normalize\Debug\Project1.lib" /MACHINE:X86 Debug\main.obj
+         Project1.vcxproj -> D:\Documents\UNOESC\UNOESC 2016\Semestre II\grafica II\Vetor_Normalize\Vetor_Normalize\Debug\Project1.exe
+     1>Done Building Project "D:\Documents\UNOESC\UNOESC 2016\Semestre II\grafica II\Vetor_Normalize\Vetor_Normalize\Project1\Project1.vcxproj" (Build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:01.26
+Time Elapsed 00:00:01.14
