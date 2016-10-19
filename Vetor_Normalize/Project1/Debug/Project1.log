@@ -1,0 +1,12 @@
+﻿Build started 18/10/2016 21:38:30.
+     1>Project "D:\Documents\UNOESC\UNOESC 2016\Semestre II\grafica II\Vetor_Normalize\Vetor_Normalize\Project1\Project1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\main.cpp
+         main.cpp
+     1>d:\documents\unoesc\unoesc 2016\semestre ii\grafica ii\vetor_normalize\vetor_normalize\main.cpp(47): error C2661: 'div' : no overloaded function takes 1 arguments
+     1>d:\documents\unoesc\unoesc 2016\semestre ii\grafica ii\vetor_normalize\vetor_normalize\main.cpp(89): warning C4244: 'argument' : conversion from 'GLdouble' to 'GLsizei', possible loss of data
+     1>Done Building Project "D:\Documents\UNOESC\UNOESC 2016\Semestre II\grafica II\Vetor_Normalize\Vetor_Normalize\Project1\Project1.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.26
